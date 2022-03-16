@@ -1,0 +1,55 @@
+{
+    "cartTitle": "Joppaa",
+    "cartDescription": "Joppaa",
+    "cartLogo":"images/logo-admin.png",
+    "baseUrl": "http://localhost:1111",
+    "emailHost": "smtp-mail.outlook.com",
+    "emailPort": 587,
+    "emailSecure": false,
+    "emailUser": "hi@markmoffat.com",
+    "emailPassword": "this_is_the_smtp_password",
+    "emailAddress": "Marketing@joppaa.co.uk",
+    "productsPerRow": 3,
+    "productsPerPage": 6,
+    "footerHtml": "",
+    "googleAnalytics": "",
+    "injectJs": "",
+    "customCss": "",
+    "currencySymbol": "£",
+    "currencyISO": "GBP",
+    "paymentGateway": [
+        "stripe"
+    ],
+    "databaseConnectionString": "mongodb+srv://joppaaapp:Joppaashopping20@cluster0.nvtwv.mongodb.net/Joppaadb",
+    "theme": "Cloth",
+    "trackStock": false,
+    "orderHook": "",
+    "availableLanguages": [
+        "en",
+        "it"
+    ],
+    "defaultLocale": "en",
+    "maxQuantity": 25,
+    "twitterHandle": "",
+    "facebookAppId": "",
+    "productOrderBy": "date",
+    "productOrder": "descending",
+    "modules": {
+        "enabled": {
+            "shipping": "shipping-basic",
+            "discount": "discount-voucher",
+            "reviews": "reviews-basic"
+        },
+        "loaded": {
+            "shipping": {},
+            "discount": {},
+            "reviews": {}
+        }
+    },
+    "showRelatedProducts": true,
+    "showHomepageVariants": false,
+    "secretCookie": "bf60094e266f966fa090abc57204d570d83e77b3",
+    "secretSession": "43ecfa1006437434e5e9108ba7046a6634e28408",
+    "themeViews": "../views/themes/Cloth/",
+    "env": ""
+}

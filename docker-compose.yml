@@ -1,0 +1,25 @@
+version: '3'
+services:
+  JoppaaCart:
+    image: "node:8"
+    build: .
+    container_name: "joppaacart"
+    environment:
+      NODE_ENV: development
+      NODE_PATH: /
+    ports:
+      - "1111:1111"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:3.4.10
+    container_name: "joppaacart-mongodb"
+    volumes:
+      - joppaacart-mongo-data:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null
+volumes:
+  joppaacart-mongo-data:
